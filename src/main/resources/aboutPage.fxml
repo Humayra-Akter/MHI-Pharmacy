@@ -1,189 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.CubicCurve?>
-<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #02462f;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.aboutPage">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.aboutPage">
    <children>
-      <Circle layoutX="172.0" layoutY="245.0" radius="102.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle layoutX="172.0" layoutY="245.0" radius="96.0" stroke="BLACK" strokeType="INSIDE">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color green="0.46315789222717285" blue="0.13122807443141937" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.31607523881429933">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.5249712766306667">
-                     <color>
-                        <Color red="0.37037035822868347" green="1.0" blue="0.5487654209136963" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.673170731707317">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.015789473429322243" green="0.4736842215061188" blue="0.14552631974220276" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Circle>
+      <Circle layoutX="172.0" layoutY="233.0" radius="102.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle layoutX="431.0" layoutY="239.0" radius="102.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle layoutX="698.0" layoutY="239.0" radius="102.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle layoutX="431.0" layoutY="239.0" radius="96.0" stroke="BLACK" strokeType="INSIDE">
          <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
+            <RadialGradient centerX="0.5385462555066081" centerY="0.49526513706554076" radius="0.5">
                <stops>
                   <Stop>
                      <color>
-                        <Color green="0.46315789222717285" blue="0.13122807443141937" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
-                  <Stop offset="0.31607523881429933">
+                  <Stop offset="0.09265666546302068">
                      <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
-                  <Stop offset="0.5249712766306667">
+                  <Stop offset="0.5136985851688933">
                      <color>
-                        <Color red="0.37037035822868347" green="1.0" blue="0.5487654209136963" />
+                        <Color red="0.9444444179534912" green="1.0" blue="0.9592592716217041" />
                      </color>
                   </Stop>
-                  <Stop offset="0.673170731707317">
+                  <Stop offset="0.9261989955027408">
                      <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="0.015789473429322243" green="0.4736842215061188" blue="0.14552631974220276" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
                </stops>
-            </LinearGradient>
+            </RadialGradient>
          </fill>
       </Circle>
-      <Circle layoutX="698.0" layoutY="239.0" radius="96.0" stroke="BLACK" strokeType="INSIDE">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color green="0.46315789222717285" blue="0.13122807443141937" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.31607523881429933">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.5249712766306667">
-                     <color>
-                        <Color red="0.37037035822868347" green="1.0" blue="0.5487654209136963" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.673170731707317">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.015789473429322243" green="0.4736842215061188" blue="0.14552631974220276" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Circle>
-      <ImageView fitHeight="154.0" fitWidth="136.0" layoutX="371.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="161.0" fitWidth="131.0" layoutX="364.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/me2-removebg-preview.png" />
          </image>
+         <effect>
+            <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="125.0" elevation="360.0">
+                     <color>
+                        <Color green="0.9599999785423279" blue="0.057258881628513336" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
       </ImageView>
-      <CubicCurve controlX1="90.800048828125" controlX2="-222.80001831054688" controlY1="248.4000244140625" controlY2="-120.39999389648438" endX="1.999969482421875" endY="200.4000244140625" layoutX="430.0" layoutY="386.0" startX="-122.80001831054688" startY="-91.5999755859375" stroke="WHITE">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color green="0.46315789222717285" blue="0.13122807443141937" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.31607523881429933">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.5249712766306667">
-                     <color>
-                        <Color red="0.37037035822868347" green="1.0" blue="0.5487654209136963" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.673170731707317">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.015789473429322243" green="0.4736842215061188" blue="0.14552631974220276" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </CubicCurve>
-      <QuadCurve controlX="199.19998168945312" controlY="48.20001220703125" endX="163.99996948242188" endY="11.60003662109375" layoutX="200.0" layoutY="538.0" startX="-37.399993896484375" startY="48.20001220703125" stroke="#f7f7f7" strokeType="INSIDE">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.17407406866550446" green="1.0" blue="0.4080864191055298" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.31607523881429933">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.5249712766306667">
-                     <color>
-                        <Color red="0.37037035822868347" green="1.0" blue="0.5487654209136963" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.22986355423927307" green="0.9263157844543457" blue="0.41558414697647095" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </QuadCurve>
-      <AnchorPane layoutX="7.0" layoutY="22.0" prefHeight="71.0" prefWidth="886.0" style="-fx-background-color: #b6fcca;">
+      <AnchorPane layoutX="7.0" layoutY="22.0" prefHeight="72.0" prefWidth="886.0" style="-fx-background-color: linear-gradient(to top,#b6fcca,#ffffff); -fx-border-color: black; -fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20; -fx-border-width: 4 4 4 4;">
          <children>
             <Text fill="#02462f" layoutX="83.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MHI Pharma" wrappingWidth="303.73668670654297">
                <font>
@@ -201,244 +91,438 @@
                </font>
             </Button>
          </children></AnchorPane>
-      <Text layoutX="117.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="Munjib Hasan" wrappingWidth="167.73672485351562">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
-         </font>
+      <Circle layoutX="698.0" layoutY="239.0" radius="96.0" stroke="BLACK" strokeType="INSIDE">
          <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
+            <RadialGradient centerX="0.5385462555066081" centerY="0.49526513706554076" radius="0.5">
                <stops>
                   <Stop>
                      <color>
-                        <Color green="1.0" blue="0.28333333134651184" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
-                  <Stop offset="0.31607523881429933">
+                  <Stop offset="0.09265666546302068">
                      <color>
-                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
-                  <Stop offset="0.5249712766306667">
+                  <Stop offset="0.5136985851688933">
                      <color>
-                        <Color red="0.6850682497024536" green="0.9684210419654846" blue="0.7606289982795715" />
+                        <Color red="0.9444444179534912" green="1.0" blue="0.9592592716217041" />
                      </color>
                   </Stop>
-                  <Stop offset="0.673170731707317">
+                  <Stop offset="0.9261989955027408">
                      <color>
-                        <Color green="1.0" blue="0.2666666805744171" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color green="1.0" blue="0.2666666805744171" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
                </stops>
-            </LinearGradient>
+            </RadialGradient>
          </fill>
-      </Text>
-      <Text layoutX="649.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="Md. Imran-Ul-Haq" wrappingWidth="220.53677368164062">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
-         </font>
+      </Circle>
+      <Circle layoutX="172.0" layoutY="233.0" radius="96.0" stroke="BLACK" strokeType="INSIDE">
          <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
+            <RadialGradient centerX="0.5385462555066081" centerY="0.49526513706554076" radius="0.5">
                <stops>
                   <Stop>
                      <color>
-                        <Color green="1.0" blue="0.28333333134651184" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
-                  <Stop offset="0.31607523881429933">
+                  <Stop offset="0.09265666546302068">
                      <color>
-                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
-                  <Stop offset="0.5249712766306667">
+                  <Stop offset="0.5136985851688933">
                      <color>
-                        <Color red="0.6850682497024536" green="0.9684210419654846" blue="0.7606289982795715" />
+                        <Color red="0.9444444179534912" green="1.0" blue="0.9592592716217041" />
                      </color>
                   </Stop>
-                  <Stop offset="0.673170731707317">
+                  <Stop offset="0.9261989955027408">
                      <color>
-                        <Color green="1.0" blue="0.2666666805744171" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color green="1.0" blue="0.2666666805744171" />
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
                      </color>
                   </Stop>
                </stops>
-            </LinearGradient>
+            </RadialGradient>
          </fill>
-      </Text>
-      <Text layoutX="371.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="Humayra Akter" wrappingWidth="203.9999999999999">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
-         </font>
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
-               <stops>
-                  <Stop>
+      </Circle>
+      <ImageView fitHeight="161.0" fitWidth="192.0" layoutX="76.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/314418960_671580481162227_3799248792367858872_n-removebg-preview.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="125.0" elevation="360.0">
                      <color>
-                        <Color green="1.0" blue="0.28333333134651184" />
+                        <Color green="0.9599999785423279" blue="0.057258881628513336" />
                      </color>
-                  </Stop>
-                  <Stop offset="0.31607523881429933">
-                     <color>
-                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.5249712766306667">
-                     <color>
-                        <Color red="0.6850682497024536" green="0.9684210419654846" blue="0.7606289982795715" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.673170731707317">
-                     <color>
-                        <Color green="1.0" blue="0.2666666805744171" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color green="1.0" blue="0.2666666805744171" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Text>
-      <CubicCurve controlX1="90.800048828125" controlX2="-222.80001831054688" controlY1="248.4000244140625" controlY2="-120.39999389648438" endX="1.999969482421875" endY="200.4000244140625" layoutX="168.0" layoutY="396.0" startX="-122.80001831054688" startY="-91.5999755859375" stroke="WHITE">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color green="0.46315789222717285" blue="0.13122807443141937" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.31607523881429933">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.5249712766306667">
-                     <color>
-                        <Color red="0.37037035822868347" green="1.0" blue="0.5487654209136963" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.673170731707317">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.015789473429322243" green="0.4736842215061188" blue="0.14552631974220276" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </CubicCurve>
-      <CubicCurve controlX1="90.800048828125" controlX2="-222.80001831054688" controlY1="248.4000244140625" controlY2="-120.39999389648438" endX="1.999969482421875" endY="200.4000244140625" layoutX="683.0" layoutY="386.0" startX="-122.80001831054688" startY="-91.5999755859375" stroke="WHITE">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color green="0.46315789222717285" blue="0.13122807443141937" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.31607523881429933">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.5249712766306667">
-                     <color>
-                        <Color red="0.37037035822868347" green="1.0" blue="0.5487654209136963" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.673170731707317">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.015789473429322243" green="0.4736842215061188" blue="0.14552631974220276" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </CubicCurve>
-      <QuadCurve controlX="199.19998168945312" controlY="48.20001220703125" endX="163.99996948242188" endY="11.60003662109375" layoutX="724.0" layoutY="528.0" startX="-37.399993896484375" startY="48.20001220703125" stroke="WHITE" strokeType="INSIDE">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.17407406866550446" green="1.0" blue="0.4080864191055298" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.31607523881429933">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.5249712766306667">
-                     <color>
-                        <Color red="0.37037035822868347" green="1.0" blue="0.5487654209136963" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.22986355423927307" green="0.9263157844543457" blue="0.41558414697647095" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </QuadCurve>
-      <QuadCurve controlX="199.19998168945312" controlY="48.20001220703125" endX="163.99996948242188" endY="11.60003662109375" layoutX="467.0" layoutY="529.0" startX="-37.399993896484375" startY="48.20001220703125" stroke="#ecebeb" strokeType="INSIDE">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.17407406866550446" green="1.0" blue="0.4080864191055298" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.31607523881429933">
-                     <color>
-                        <Color green="1.0" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.5249712766306667">
-                     <color>
-                        <Color red="0.37037035822868347" green="1.0" blue="0.5487654209136963" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.22986355423927307" green="0.9263157844543457" blue="0.41558414697647095" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </QuadCurve>
-      <ImageView fitHeight="165.0" fitWidth="111.0" layoutX="643.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="161.0" fitWidth="120.0" layoutX="644.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/316230446_1300701354026103_6489941607746985434_n-removebg-preview.png" />
          </image>
+         <effect>
+            <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="125.0" elevation="360.0">
+                     <color>
+                        <Color green="0.9599999785423279" blue="0.057258881628513336" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
       </ImageView>
-      <ImageView fitHeight="154.0" fitWidth="192.0" layoutX="79.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+      <Text layoutX="100.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="202114068" wrappingWidth="167.73672485351562">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="619.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="Md. Imran-Ul-Haq" wrappingWidth="242.13662719726562">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="347.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="Humayra Akter" wrappingWidth="206.60545349121082">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="100.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="Munjib Hasan" wrappingWidth="167.73672485351562">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="619.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="202114068" wrappingWidth="167.73672485351562">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text layoutX="347.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black;" text="202114068" wrappingWidth="167.73672485351562">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="278.0" layoutX="70.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="6.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="278.0" layoutX="599.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="6.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="278.0" layoutX="332.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="6.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.7234848629344593">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.31607523881429933">
+                     <color>
+                        <Color red="0.6740740537643433" green="1.0" blue="0.7609876394271851" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5249712766306667">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.9473684430122375" blue="0.934502899646759" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.673170731707317">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="arc1" fitHeight="154.0" fitWidth="168.0" layoutX="88.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/314418960_671580481162227_3799248792367858872_n-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="arc2" fitHeight="154.0" fitWidth="136.0" layoutX="371.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/me2-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="arc3" fitHeight="150.0" fitWidth="200.0" layoutX="651.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/316230446_1300701354026103_6489941607746985434_n-removebg-preview.png" />
          </image>
       </ImageView>
    </children>

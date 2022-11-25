@@ -20,7 +20,7 @@
 
 <AnchorPane fx:id="adminLoginPg" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #02462f;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.adminLogin">
    <children>
-      <ImageView fitHeight="487.0" fitWidth="340.0" layoutX="100.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="designImage" fitHeight="274.0" fitWidth="349.0" layoutX="91.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/Pharmacist-Vector-removebg-preview.png" />
          </image>
