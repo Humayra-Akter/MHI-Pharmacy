@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginRolePage" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #02462f;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.loginRolePage">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="125.0" maxWidth="-Infinity" prefHeight="413.0" prefWidth="866.0" style="-fx-background-color: #b5fcca;">
+         <children>
+            <Text layoutX="12.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Your Role" textAlignment="CENTER" wrappingWidth="841.6000516891477">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="31.0" />
+               </font>
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.03368420898914337" green="0.08421052992343903" blue="0.0648421049118042" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.2072678331090175">
+                           <color>
+                              <Color red="0.03368420898914337" green="0.08421052992343903" blue="0.0648421049118042" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5066375603190758">
+                           <color>
+                              <Color red="0.007843137718737125" green="0.27450981736183167" blue="0.18431372940540314" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7954239569313591">
+                           <color>
+                              <Color green="1.0" blue="0.4000000059604645" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.34307992458343506" green="0.8421052694320679" blue="0.5426900386810303" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <AnchorPane layoutX="59.0" layoutY="121.0" prefHeight="250.0" prefWidth="228.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css">
+               <children>
+                  <Button layoutX="9.0" layoutY="10.0" mnemonicParsing="false" prefHeight="226.0" prefWidth="207.0" styleClass="roleBgBtn" stylesheets="@CSS/rolePage.css" />
+                  <Button layoutX="39.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Admin" textFill="#b6fcca">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="124.0" fitWidth="130.0" layoutX="52.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icon-admin.png" />
+                     </image>
+                     <effect>
+                        <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="125.0" elevation="360.0">
+                                 <color>
+                                    <Color green="1.0" blue="0.4166666567325592" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="588.0" layoutY="121.0" prefHeight="250.0" prefWidth="228.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css">
+               <children>
+                  <Button layoutX="9.0" layoutY="10.0" mnemonicParsing="false" prefHeight="226.0" prefWidth="207.0" styleClass="roleBgBtn" stylesheets="@CSS/rolePage.css" />
+                  <Button layoutX="39.0" layoutY="191.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Salesman" textFill="#b6fcca">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="124.0" fitWidth="130.0" layoutX="59.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/salesperson.png" />
+                     </image>
+                     <effect>
+                        <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="125.0" elevation="360.0">
+                                 <color>
+                                    <Color green="1.0" blue="0.4166666567325592" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="324.0" layoutY="121.0" prefHeight="250.0" prefWidth="228.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css">
+               <children>
+                  <Button layoutX="9.0" layoutY="10.0" mnemonicParsing="false" prefHeight="226.0" prefWidth="207.0" styleClass="roleBgBtn" stylesheets="@CSS/rolePage.css" />
+                  <Button layoutX="37.0" layoutY="190.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Manager" textFill="#b6fcca">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="124.0" fitWidth="130.0" layoutX="49.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/manager.jpg" />
+                     </image>
+                     <effect>
+                        <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="125.0" elevation="360.0">
+                                 <color>
+                                    <Color green="1.0" blue="0.4166666567325592" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="57.0" fitWidth="66.0" layoutX="14.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pharmacy.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <ColorAdjust brightness="0.8" contrast="-0.07" hue="-1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <Text layoutX="81.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MHI Pharma" wrappingWidth="227.7367172241211">
+         <font>
+            <Font name="Berlin Sans FB" size="37.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.8380681818181819" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5540787184453271">
+                     <color>
+                        <Color red="0.6481481194496155" green="1.0" blue="0.6774691343307495" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <AnchorPane layoutX="14.0" layoutY="550.0" prefHeight="36.0" prefWidth="866.0" style="-fx-background-color: #b6fcca;">
+         <children>
+            <ImageView fitHeight="36.0" fitWidth="40.0" layoutX="766.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/youtube.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="125.51" elevation="360.0">
+                           <color>
+                              <Color red="0.21568627655506134" green="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="719.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/instagram.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="125.51" elevation="360.0">
+                           <color>
+                              <Color red="0.21568627655506134" green="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="46.0" layoutX="667.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/facebook-messenger.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="125.51" elevation="360.0">
+                           <color>
+                              <Color red="0.21568627655506134" green="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="14.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/copyrightt.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="9.0" prefHeight="18.0" prefWidth="150.0" text="Copyright -MHI Pharma" textFill="#02462f">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="618.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/facebook.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="125.51" elevation="360.0">
+                           <color>
+                              <Color red="0.21568627655506134" green="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="819.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/info.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="125.51" elevation="360.0">
+                           <color>
+                              <Color red="0.21568627655506134" green="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="79.0" prefHeight="36.0" prefWidth="866.0" style="-fx-background-color: #b6fcca;">
+         <children>
+            <ImageView fx:id="apatotoCheck2" fitHeight="30.0" fitWidth="30.0" layoutX="814.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/phone-call.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="125.51" elevation="360.0">
+                           <color>
+                              <Color red="0.21568627655506134" green="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="apatotoCheck" fitHeight="30.0" fitWidth="36.0" layoutX="761.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="2.0" specularExponent="5.32" surfaceScale="1.77">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="125.51" elevation="360.0">
+                           <color>
+                              <Color red="0.21568627655506134" green="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="829.0" layoutY="30.0" mnemonicParsing="false" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

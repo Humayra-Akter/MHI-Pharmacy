@@ -1,0 +1,25 @@
+.roleBtn{
+-fx-background-color : linear-gradient(to left, #333300,#00cc66);
+-fx-border-color : #b6fcca;
+-fx-border-radius : 10 0 10 0;
+-fx-border-width : 2 2 2 2;
+}
+.roleBtn:hover{
+ -fx-background-color : linear-gradient(to right, #333300,#00cc66);
+}
+.roleBgBtn{
+-fx-background-color : linear-gradient(to right,#336600,#00cc66);
+-fx-border-color : #b6fcca;
+-fx-border-radius : 0 20 0 20;
+-fx-border-width : 2 2 2 2;
+}
+.roleBgBtn:hover{
+-fx-border-radius : 30 0 30 0;
+-fx-background-color : linear-gradient(to right, #333300,#00cc66);
+}
+.btnBg{
+-fx-background-color :  linear-gradient(to left,#336600,#00cc66);
+-fx-border-color : #02462f;
+-fx-border-radius : 0 20 0 20;
+-fx-border-width : 4 4 4 4;
+}
