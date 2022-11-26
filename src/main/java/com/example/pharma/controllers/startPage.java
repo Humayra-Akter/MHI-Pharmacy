@@ -1,5 +1,6 @@
 package com.example.pharma.controllers;
 
+import com.example.pharma.HelloApplication;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
@@ -24,7 +25,7 @@ public class startPage implements Initializable {
         });
     }
     private void change() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/loginRolePage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/loginRolePage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("MHIPharma");

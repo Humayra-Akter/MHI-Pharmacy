@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -20,50 +21,45 @@
    <children>
       <AnchorPane layoutX="15.0" layoutY="125.0" maxWidth="-Infinity" prefHeight="413.0" prefWidth="866.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);">
          <children>
-            <Text layoutX="12.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Your Role" textAlignment="CENTER" wrappingWidth="841.6000516891477">
+            <Text layoutX="12.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Your Role" textAlignment="CENTER" wrappingWidth="841.6000516891477">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="31.0" />
                </font>
                <fill>
-                  <LinearGradient cycleMethod="REFLECT">
+                  <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" radius="0.5">
                      <stops>
                         <Stop>
                            <color>
-                              <Color red="0.03368420898914337" green="0.08421052992343903" blue="0.0648421049118042" />
+                              <Color red="0.07992202788591385" green="0.43157893419265747" blue="0.2147238403558731" />
                            </color>
                         </Stop>
-                        <Stop offset="0.2072678331090175">
+                        <Stop offset="0.15477792732166892">
                            <color>
-                              <Color red="0.03368420898914337" green="0.08421052992343903" blue="0.0648421049118042" />
+                              <Color red="0.07992202788591385" green="0.43157893419265747" blue="0.2147238403558731" />
                            </color>
                         </Stop>
-                        <Stop offset="0.5066375603190758">
+                        <Stop offset="0.3822341857335126">
                            <color>
-                              <Color red="0.007843137718737125" green="0.27450981736183167" blue="0.18431372940540314" />
+                              <Color green="0.2526315748691559" blue="0.15157894790172577" />
                            </color>
                         </Stop>
-                        <Stop offset="0.7954239569313591">
+                        <Stop offset="0.870794078061911">
                            <color>
-                              <Color green="1.0" blue="0.4000000059604645" />
+                              <Color green="0.5052631497383118" blue="0.30315789580345154" />
                            </color>
                         </Stop>
                         <Stop offset="1.0">
                            <color>
-                              <Color red="0.34307992458343506" green="0.8421052694320679" blue="0.5426900386810303" />
+                              <Color green="0.5052631497383118" blue="0.30315789580345154" />
                            </color>
                         </Stop>
                      </stops>
-                  </LinearGradient>
+                  </RadialGradient>
                </fill>
             </Text>
-            <AnchorPane layoutX="59.0" layoutY="121.0" prefHeight="250.0" prefWidth="228.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css">
+            <AnchorPane layoutX="57.0" layoutY="131.0" prefHeight="250.0" prefWidth="228.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css">
                <children>
-                  <Button layoutX="9.0" layoutY="10.0" mnemonicParsing="false" prefHeight="226.0" prefWidth="207.0" styleClass="roleBgBtn" stylesheets="@CSS/rolePage.css" />
-                  <Button layoutX="39.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Admin" textFill="#b6fcca">
-                     <font>
-                        <Font name="Berlin Sans FB Demi Bold" size="17.0" />
-                     </font>
-                  </Button>
+                  <Button layoutX="9.0" layoutY="10.0" mnemonicParsing="false" prefHeight="250.0" prefWidth="207.0" styleClass="roleBgBtn" stylesheets="@CSS/rolePage.css" />
                   <ImageView fx:id="image1" fitHeight="124.0" fitWidth="130.0" layoutX="52.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/icon-admin.png" />
@@ -83,16 +79,21 @@
                         </Lighting>
                      </effect>
                   </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="588.0" layoutY="121.0" prefHeight="250.0" prefWidth="228.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css">
-               <children>
-                  <Button layoutX="9.0" layoutY="10.0" mnemonicParsing="false" prefHeight="226.0" prefWidth="207.0" styleClass="roleBgBtn" stylesheets="@CSS/rolePage.css" />
-                  <Button layoutX="39.0" layoutY="191.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Salesman" textFill="#b6fcca">
+                  <Button layoutX="37.0" layoutY="216.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
                      <font>
-                        <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
                   </Button>
+                  <Button layoutX="39.0" layoutY="178.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="588.0" layoutY="128.0" prefHeight="270.0" prefWidth="228.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css">
+               <children>
+                  <Button layoutX="9.0" layoutY="10.0" mnemonicParsing="false" prefHeight="250.0" prefWidth="207.0" styleClass="roleBgBtn" stylesheets="@CSS/rolePage.css" />
                   <ImageView fx:id="image3" fitHeight="124.0" fitWidth="130.0" layoutX="59.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/salesperson.png" />
@@ -112,16 +113,21 @@
                         </Lighting>
                      </effect>
                   </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="324.0" layoutY="121.0" prefHeight="250.0" prefWidth="228.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css">
-               <children>
-                  <Button layoutX="9.0" layoutY="10.0" mnemonicParsing="false" prefHeight="226.0" prefWidth="207.0" styleClass="roleBgBtn" stylesheets="@CSS/rolePage.css" />
-                  <Button layoutX="37.0" layoutY="190.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Manager" textFill="#b6fcca">
+                  <Button layoutX="37.0" layoutY="177.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
                      <font>
-                        <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
                   </Button>
+                  <Button layoutX="37.0" layoutY="215.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="324.0" layoutY="133.0" prefHeight="269.0" prefWidth="228.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css">
+               <children>
+                  <Button layoutX="7.0" layoutY="9.0" mnemonicParsing="false" prefHeight="250.0" prefWidth="207.0" styleClass="roleBgBtn" stylesheets="@CSS/rolePage.css" />
                   <ImageView fx:id="image2" fitHeight="124.0" fitWidth="130.0" layoutX="49.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/manager.jpg" />
@@ -141,6 +147,43 @@
                         </Lighting>
                      </effect>
                   </ImageView>
+                  <Button layoutX="36.0" layoutY="180.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="36.0" layoutY="218.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="90.0" layoutY="91.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to top,#02463f, #b6fcca); -fx-border-width: 3 3 3 3; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;">
+               <children>
+                  <Text fill="#02462f" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN" textAlignment="CENTER" wrappingWidth="150.39999999999998">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="624.0" layoutY="91.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to top,#02463f, #b6fcca); -fx-border-width: 3 3 3 3; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;">
+               <children>
+                  <Text fill="#02462f" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SALESMAN" textAlignment="CENTER" wrappingWidth="150.39999999999998">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="355.0" layoutY="91.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to top,#02463f, #b6fcca); -fx-border-width: 3 3 3 3; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;">
+               <children>
+                  <Text fill="#02462f" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGER" textAlignment="CENTER" wrappingWidth="150.39999999999998">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font>
+                  </Text>
                </children>
             </AnchorPane>
          </children>
