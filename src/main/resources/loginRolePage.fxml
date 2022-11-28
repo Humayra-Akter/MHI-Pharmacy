@@ -79,12 +79,12 @@
                         </Lighting>
                      </effect>
                   </ImageView>
-                  <Button layoutX="37.0" layoutY="216.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                  <Button fx:id="signupAdmin" layoutX="37.0" layoutY="216.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="39.0" layoutY="178.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
+                  <Button fx:id="loginAdmin" layoutX="39.0" layoutY="178.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
@@ -113,12 +113,12 @@
                         </Lighting>
                      </effect>
                   </ImageView>
-                  <Button layoutX="37.0" layoutY="177.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
+                  <Button fx:id="loginSalesman" layoutX="37.0" layoutY="177.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="37.0" layoutY="215.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                  <Button fx:id="signupSalesman" layoutX="37.0" layoutY="215.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
@@ -147,12 +147,12 @@
                         </Lighting>
                      </effect>
                   </ImageView>
-                  <Button layoutX="36.0" layoutY="180.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
+                  <Button fx:id="loginManager" layoutX="36.0" layoutY="180.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="36.0" layoutY="218.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                  <Button fx:id="signupManager" layoutX="36.0" layoutY="218.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
@@ -405,7 +405,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Button layoutX="829.0" layoutY="30.0" mnemonicParsing="false" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
+      <Button fx:id="backtostartpage" layoutX="829.0" layoutY="30.0" mnemonicParsing="false" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="14.0" />
          </font>

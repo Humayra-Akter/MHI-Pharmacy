@@ -13,11 +13,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #b6fcca;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.startPage">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.startPage">
    <children>
       <AnchorPane layoutX="73.0" layoutY="68.0" prefHeight="534.0" prefWidth="828.0" style="-fx-background-color: #02462f;">
          <children>
@@ -36,15 +37,92 @@
                   <Image url="@images/copyrightt.png" />
                </image>
             </ImageView>
-            <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="481.0" prefWidth="801.0" style="-fx-background-color: black; -fx-border-radius: 30 30 30 30; -fx-background-radius: 30 30 30 30;">
+            <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="481.0" prefWidth="801.0" style="-fx-background-color: black; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;">
                <children>
-                  <AnchorPane layoutX="10.0" layoutY="7.0" prefHeight="468.0" prefWidth="785.0" style="-fx-background-color: #b6fcca; -fx-border-radius: 30 30 30 30; -fx-background-radius: 30 30 30 30;">
+                  <AnchorPane layoutX="5.0" layoutY="7.0" prefHeight="468.0" prefWidth="791.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;">
                      <children>
-                        <ImageView fitHeight="458.0" fitWidth="603.0" layoutX="93.0" layoutY="5.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="399.0" fitWidth="588.0" layoutX="101.0" layoutY="55.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/pharmacyyy-removebg-preview.png" />
+                              <Image url="@images/pharmacy-concept-creative-vector-illustration-of-female-pharmacist-at-drugstore-counter-2C3XHM5-removebg-preview.png" />
                            </image>
                         </ImageView>
+                        <Text fill="#02462f" layoutX="7.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO MHI-PHARMA" textAlignment="CENTER" wrappingWidth="776.0000183105468">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="25.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy is the science and practice of discovering, producing, preparing, dispensing, reviewing and monitoring medications, aiming to ensure the safe, effective, and affordable use of medicines. It is a miscellaneous science as it links health sciences with pharmaceutical sciences and natural sciences. The professional practice is becoming more clinically oriented as most of the drugs are now manufactured by pharmaceutical industries." textAlignment="CENTER" wrappingWidth="741.3366394042969">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                           </font>
+                           <fill>
+                              <RadialGradient centerX="0.5077092511013215" centerY="0.4962121428865375" radius="0.5">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.5235531628532973">
+                                       <color>
+                                          <Color red="0.07192982733249664" green="0.4736842215061188" blue="0.07192982733249664" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.6276400879755769">
+                                       <color>
+                                          <Color red="0.14596490561962128" green="0.27368420362472534" blue="0.15873683989048004" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.9004037685060566">
+                                       <color>
+                                          <Color red="0.007329434622079134" green="0.49473685026168823" blue="0.007329434622079134" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </Text>
+                        <Text layoutX="33.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The scope of pharmacy practice includes more traditional roles such as compounding and dispensing of medications. It also includes more modern services related to health care including clinical services, reviewing medications for safety and efficacy, and providing drug information. Pharmacists, therefore, are experts on drug therapy and are the primary health professionals who optimize the use of medication for the benefit of the patients." textAlignment="CENTER" wrappingWidth="725.3367233276367">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                           </font>
+                           <fill>
+                              <RadialGradient centerX="0.5077092511013215" centerY="0.4962121428865375" radius="0.5">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.5235531628532973">
+                                       <color>
+                                          <Color red="0.07192982733249664" green="0.4736842215061188" blue="0.07192982733249664" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.6276400879755769">
+                                       <color>
+                                          <Color red="0.14596490561962128" green="0.27368420362472534" blue="0.15873683989048004" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.9004037685060566">
+                                       <color>
+                                          <Color red="0.007329434622079134" green="0.49473685026168823" blue="0.007329434622079134" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </Text>
                      </children>
                   </AnchorPane>
                </children>

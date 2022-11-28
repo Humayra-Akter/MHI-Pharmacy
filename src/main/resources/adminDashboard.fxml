@@ -14,229 +14,225 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="border_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="border_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.adminDashboard">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" BorderPane.alignment="CENTER">
-         <children>
-            <Text layoutX="20.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN DASHBOARD" textAlignment="CENTER" wrappingWidth="159.73675537109375">
-               <fill>
-                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="0.0010000000474974513" green="0.05000000074505806" blue="0.01733333244919777" />
-                           </color>
-                        </Stop>
-                        <Stop offset="0.006729475100942127">
-                           <color>
-                              <Color red="0.0010000000474974513" green="0.05000000074505806" blue="0.01733333244919777" />
-                           </color>
-                        </Stop>
-                        <Stop offset="0.14535666218034995">
-                           <color>
-                              <Color red="0.007843137718737125" green="0.27450981736183167" blue="0.18431372940540314" />
-                           </color>
-                        </Stop>
-                        <Stop offset="0.3405114401076716">
-                           <color>
-                              <Color red="0.04124756157398224" green="0.4842105209827423" blue="0.188901886343956" />
-                           </color>
-                        </Stop>
-                        <Stop offset="0.7631224764468372">
-                           <color>
-                              <Color red="0.04320000112056732" green="0.47999998927116394" blue="0.18880000710487366" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="9.74658876657486E-4" green="0.05263157933950424" blue="0.01819363236427307" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </RadialGradient>
-               </fill>
-               <font>
-                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
-               </font>
-            </Text>
-            <Button fx:id="addRmvBranch" layoutX="9.0" layoutY="193.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="181.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Add/Remove Branch" textFill="#b6fcca">
-               <font>
-                  <Font name="Berlin Sans FB Demi Bold" size="15.0" />
-               </font>
-            </Button>
-            <Button layoutX="9.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="181.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Drug History" textFill="#b6fcca">
-               <font>
-                  <Font name="Berlin Sans FB Demi Bold" size="15.0" />
-               </font>
-            </Button>
-            <Button layoutX="9.0" layoutY="370.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="181.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Logout" textFill="#b6fcca">
-               <font>
-                  <Font name="Berlin Sans FB Demi Bold" size="15.0" />
-               </font>
-            </Button>
-            <Button layoutX="-2.0" layoutY="453.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="214.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css" textFill="#b6fcca">
-               <font>
-                  <Font name="Berlin Sans FB Demi Bold" size="15.0" />
-               </font>
-            </Button>
-            <Button layoutX="9.0" layoutY="249.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="181.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Add/Remove Drug" textFill="#b6fcca">
-               <font>
-                  <Font name="Berlin Sans FB Demi Bold" size="15.0" />
-               </font>
-            </Button>
-            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="20.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/facebook.png" />
-               </image>
-               <effect>
-                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant azimuth="0.0" elevation="188.26">
-                           <color>
-                              <Color green="1.0" blue="0.501960813999176" />
-                           </color>
-                        </Light.Distant>
-                     </light>
-                  </Lighting>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="69.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/facebook-messenger.png" />
-               </image>
-               <effect>
-                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant azimuth="0.0" elevation="188.26">
-                           <color>
-                              <Color green="1.0" blue="0.501960813999176" />
-                           </color>
-                        </Light.Distant>
-                     </light>
-                  </Lighting>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="160.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/info.png" />
-               </image>
-               <effect>
-                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant azimuth="0.0" elevation="188.26">
-                           <color>
-                              <Color green="1.0" blue="0.501960813999176" />
-                           </color>
-                        </Light.Distant>
-                     </light>
-                  </Lighting>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="114.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/youtube.png" />
-               </image>
-               <effect>
-                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant azimuth="0.0" elevation="188.26">
-                           <color>
-                              <Color green="1.0" blue="0.501960813999176" />
-                           </color>
-                        </Light.Distant>
-                     </light>
-                  </Lighting>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="33.0" fitWidth="20.0" layoutX="41.0" layoutY="380.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/sign-in-alt.png" />
-               </image>
-               <effect>
-                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant azimuth="0.0" elevation="188.26">
-                           <color>
-                              <Color green="1.0" blue="0.501960813999176" />
-                           </color>
-                        </Light.Distant>
-                     </light>
-                  </Lighting>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="27.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/calendar-clock.png" />
-               </image>
-               <effect>
-                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant azimuth="0.0" elevation="188.26">
-                           <color>
-                              <Color green="1.0" blue="0.501960813999176" />
-                           </color>
-                        </Light.Distant>
-                     </light>
-                  </Lighting>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="15.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/money-check-edit.png" />
-               </image>
-               <effect>
-                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant azimuth="0.0" elevation="188.26">
-                           <color>
-                              <Color green="1.0" blue="0.501960813999176" />
-                           </color>
-                        </Light.Distant>
-                     </light>
-                  </Lighting>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="12.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/shield-plus.png" />
-               </image>
-               <effect>
-                  <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant azimuth="0.0" elevation="188.26">
-                           <color>
-                              <Color green="1.0" blue="0.501960813999176" />
-                           </color>
-                        </Light.Distant>
-                     </light>
-                  </Lighting>
-               </effect>
-            </ImageView>
-         </children>
+         <Text layoutX="20.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN DASHBOARD" textAlignment="CENTER" wrappingWidth="159.73675537109375">
+            <fill>
+               <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.0010000000474974513" green="0.05000000074505806" blue="0.01733333244919777" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.006729475100942127">
+                        <color>
+                           <Color red="0.0010000000474974513" green="0.05000000074505806" blue="0.01733333244919777" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.14535666218034995">
+                        <color>
+                           <Color red="0.007843137718737125" green="0.27450981736183167" blue="0.18431372940540314" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.3405114401076716">
+                        <color>
+                           <Color red="0.04124756157398224" green="0.4842105209827423" blue="0.188901886343956" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.7631224764468372">
+                        <color>
+                           <Color red="0.04320000112056732" green="0.47999998927116394" blue="0.18880000710487366" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="9.74658876657486E-4" green="0.05263157933950424" blue="0.01819363236427307" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill>
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+            </font>
+         </Text>
+         <Button fx:id="addRmvBranch" layoutX="9.0" layoutY="193.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="181.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Add/Remove Branch" textFill="#b6fcca">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+            </font>
+         </Button>
+         <Button layoutX="9.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="181.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Drug History" textFill="#b6fcca">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+            </font>
+         </Button>
+         <Button layoutX="9.0" layoutY="370.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="181.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Logout" textFill="#b6fcca">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+            </font>
+         </Button>
+         <Button layoutX="-2.0" layoutY="453.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="214.0" styleClass="btnBg" stylesheets="@CSS/rolePage.css" textFill="#b6fcca">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+            </font>
+         </Button>
+         <Button layoutX="9.0" layoutY="249.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="181.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Add/Remove Drug" textFill="#b6fcca">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+            </font>
+         </Button>
+         <ImageView fx:id="facebook_icon" fitHeight="31.0" fitWidth="32.0" layoutX="20.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+            <effect>
+               <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant azimuth="0.0" elevation="188.26">
+                        <color>
+                           <Color green="1.0" blue="0.501960813999176" />
+                        </color>
+                     </Light.Distant>
+                  </light>
+               </Lighting>
+            </effect>
+            <Image url="@images/facebook.png" />
+         </ImageView>
+         <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="69.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/facebook-messenger.png" />
+            </image>
+            <effect>
+               <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant azimuth="0.0" elevation="188.26">
+                        <color>
+                           <Color green="1.0" blue="0.501960813999176" />
+                        </color>
+                     </Light.Distant>
+                  </light>
+               </Lighting>
+            </effect>
+         </ImageView>
+         <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="160.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/info.png" />
+            </image>
+            <effect>
+               <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant azimuth="0.0" elevation="188.26">
+                        <color>
+                           <Color green="1.0" blue="0.501960813999176" />
+                        </color>
+                     </Light.Distant>
+                  </light>
+               </Lighting>
+            </effect>
+         </ImageView>
+         <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="114.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/youtube.png" />
+            </image>
+            <effect>
+               <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant azimuth="0.0" elevation="188.26">
+                        <color>
+                           <Color green="1.0" blue="0.501960813999176" />
+                        </color>
+                     </Light.Distant>
+                  </light>
+               </Lighting>
+            </effect>
+         </ImageView>
+         <ImageView fitHeight="33.0" fitWidth="20.0" layoutX="41.0" layoutY="380.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/sign-in-alt.png" />
+            </image>
+            <effect>
+               <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant azimuth="0.0" elevation="188.26">
+                        <color>
+                           <Color green="1.0" blue="0.501960813999176" />
+                        </color>
+                     </Light.Distant>
+                  </light>
+               </Lighting>
+            </effect>
+         </ImageView>
+         <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="27.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/calendar-clock.png" />
+            </image>
+            <effect>
+               <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant azimuth="0.0" elevation="188.26">
+                        <color>
+                           <Color green="1.0" blue="0.501960813999176" />
+                        </color>
+                     </Light.Distant>
+                  </light>
+               </Lighting>
+            </effect>
+         </ImageView>
+         <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="15.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/money-check-edit.png" />
+            </image>
+            <effect>
+               <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant azimuth="0.0" elevation="188.26">
+                        <color>
+                           <Color green="1.0" blue="0.501960813999176" />
+                        </color>
+                     </Light.Distant>
+                  </light>
+               </Lighting>
+            </effect>
+         </ImageView>
+         <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="12.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/shield-plus.png" />
+            </image>
+            <effect>
+               <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+                  <light>
+                     <Light.Distant azimuth="0.0" elevation="188.26">
+                        <color>
+                           <Color green="1.0" blue="0.501960813999176" />
+                        </color>
+                     </Light.Distant>
+                  </light>
+               </Lighting>
+            </effect>
+         </ImageView>
       </AnchorPane>
    </left>
    <top>

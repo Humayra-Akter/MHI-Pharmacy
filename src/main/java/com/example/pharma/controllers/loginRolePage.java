@@ -4,8 +4,12 @@ import javafx.animation.ScaleTransition;
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -21,16 +25,17 @@ public class loginRolePage implements Initializable {
     public ImageView image2;
     public ImageView image3;
     public ImageView image1;
+    public Button backtostartpage;
+    public Button loginAdmin;
+    public Button signupAdmin;
+    public Button loginManager;
+    public Button signupManager;
+    public Button loginSalesman;
+    public Button signupSalesman;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        apatotoCheck.setOnMouseClicked(MouseEvent-> {
-            try {
-                change();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
+
         apatotoCheck2.setOnMouseClicked(MouseEvent-> {
             try {
                 changes();
@@ -38,42 +43,142 @@ public class loginRolePage implements Initializable {
                 throw new RuntimeException(e);
             }
         });
+            backtostartpage.setOnMouseClicked(MouseEvent->
+            {
+                try
+                {
+                    startPage();
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            loginAdmin.setOnMouseClicked(MouseEvent-> {
+                try {
+                    loginAdmin();
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            signupAdmin.setOnMouseClicked(MouseEvent-> {
+                try {
+                    signupAdmin();
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            loginManager.setOnMouseClicked(MouseEvent->
+            {
+                try {
+                    loginManager();
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            signupManager.setOnMouseClicked(MouseEvent->
+            {
+                try {
+                    signupManager();
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+        loginSalesman.setOnMouseClicked(MouseEvent->
+        {
+            try {
+                loginSalesman();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        signupSalesman.setOnMouseClicked(MouseEvent->
+        {
+            try {
+                signupSalesman();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
 
-        ScaleTransition scale1 = new ScaleTransition();
-        scale1.setNode(image1);
-        scale1.setDuration(Duration.millis(2000));
-        scale1.setCycleCount(TranslateTransition.INDEFINITE);
-        scale1.setByX(0.3);
-        scale1.setByY(0.3);
-        scale1.setAutoReverse(true);
-        scale1.play();
 
-        ScaleTransition scale2 = new ScaleTransition();
-        scale2.setNode(image2);
-        scale2.setDuration(Duration.millis(2000));
-        scale2.setCycleCount(TranslateTransition.INDEFINITE);
-        scale2.setByX(0.3);
-        scale2.setByY(0.3);
-        scale2.setAutoReverse(true);
-        scale2.play();
+        set_transition(image1);
+        set_transition(image2);
+        set_transition(image3);
+    }
 
-        ScaleTransition scale3 = new ScaleTransition();
-        scale3.setNode(image3);
-        scale3.setDuration(Duration.millis(2000));
+    private void set_transition(ImageView image)
+    {
+        ScaleTransition scale3 = new ScaleTransition(Duration.millis(2000), image);
         scale3.setCycleCount(TranslateTransition.INDEFINITE);
         scale3.setByX(0.3);
         scale3.setByY(0.3);
         scale3.setAutoReverse(true);
         scale3.play();
     }
-    private void change() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/adminDashboard.fxml"));
+
+    private void signupSalesman() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/salesmanSignup.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        Stage currentStage = (Stage) signupSalesman.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+
+    private void loginSalesman() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/salesmanLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        Stage currentStage = (Stage) loginSalesman.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+
+    private void signupManager() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/managerSignup.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        Stage currentStage = (Stage) signupManager.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+
+    private void loginManager() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/managerLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        Stage currentStage = (Stage) loginManager.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+
+    private void signupAdmin() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/adminSignup.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("MHIPharmacy");
         stage.setScene(scene);
 
-        Stage currentStage = (Stage) apatotoCheck.getScene().getWindow();
+        Stage currentStage = (Stage) signupAdmin.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+
+    private void loginAdmin() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/adminLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+
+        Stage currentStage = (Stage) loginAdmin.getScene().getWindow();
         currentStage.close();
         stage.show();
     }
@@ -85,6 +190,16 @@ public class loginRolePage implements Initializable {
         stage.setScene(scene);
 
         Stage currentStage = (Stage) apatotoCheck2.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+    public void startPage() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/startPage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        Stage currentStage = (Stage) backtostartpage.getScene().getWindow();
         currentStage.close();
         stage.show();
     }

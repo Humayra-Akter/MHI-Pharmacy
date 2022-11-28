@@ -62,7 +62,7 @@
                   <RadioButton layoutX="223.0" layoutY="259.0" mnemonicParsing="false" text="Others" />
                   <RadioButton layoutX="125.0" layoutY="254.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="63.0" text="Female" />
                   <DatePicker layoutX="23.0" layoutY="294.0" prefHeight="26.0" prefWidth="254.0" promptText="date of birth" />
-                  <Button layoutX="23.0" layoutY="357.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="254.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                  <Button fx:id="signup" layoutX="23.0" layoutY="357.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="254.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="15.0" />
                      </font>
@@ -71,7 +71,7 @@
             </AnchorPane>
          </children>
       </AnchorPane>
-      <Button layoutX="805.0" layoutY="27.0" mnemonicParsing="false" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
+      <Button fx:id="back" layoutX="805.0" layoutY="27.0" mnemonicParsing="false" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="13.0" />
          </font>
