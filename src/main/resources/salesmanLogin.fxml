@@ -244,7 +244,7 @@
             <ColorAdjust brightness="0.78" contrast="-0.73" hue="-1.0" saturation="-1.0" />
          </effect>
       </ImageView>
-      <Button layoutX="793.0" layoutY="23.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="40.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
+      <Button fx:id="back" layoutX="793.0" layoutY="23.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="40.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="14.0" />
          </font>

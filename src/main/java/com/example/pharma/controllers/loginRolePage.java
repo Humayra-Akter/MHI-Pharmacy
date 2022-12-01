@@ -14,7 +14,10 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.awt.*;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -27,11 +30,12 @@ public class loginRolePage implements Initializable {
     public ImageView image1;
     public Button backtostartpage;
     public Button loginAdmin;
-    public Button signupAdmin;
     public Button loginManager;
-    public Button signupManager;
     public Button loginSalesman;
-    public Button signupSalesman;
+    public Button adminSignup;
+    public Button salesmanSignup;
+    public Button managerSignup;
+    public ImageView facebook_icon;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -43,45 +47,50 @@ public class loginRolePage implements Initializable {
                 throw new RuntimeException(e);
             }
         });
-            backtostartpage.setOnMouseClicked(MouseEvent->
-            {
+        backtostartpage.setOnMouseClicked(MouseEvent->
+        {
                 try
                 {
                     startPage();
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
-            });
-            loginAdmin.setOnMouseClicked(MouseEvent-> {
+        });
+        loginAdmin.setOnMouseClicked(MouseEvent->
+        {
                 try {
                     loginAdmin();
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
-            });
-            signupAdmin.setOnMouseClicked(MouseEvent-> {
-                try {
-                    signupAdmin();
-                } catch (Exception e) {
-                    throw new RuntimeException(e);
-                }
-            });
-            loginManager.setOnMouseClicked(MouseEvent->
-            {
+        });
+
+        adminSignup.setOnMouseClicked(MouseEvent-> {
+            try {
+                adminSignupPage();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+        loginManager.setOnMouseClicked(MouseEvent->
+        {
                 try {
                     loginManager();
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
-            });
-            signupManager.setOnMouseClicked(MouseEvent->
-            {
-                try {
-                    signupManager();
-                } catch (Exception e) {
-                    throw new RuntimeException(e);
-                }
-            });
+        });
+
+        managerSignup.setOnMouseClicked(MouseEvent->
+        {
+            try {
+                managerSignupPage();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+
         loginSalesman.setOnMouseClicked(MouseEvent->
         {
             try {
@@ -90,15 +99,23 @@ public class loginRolePage implements Initializable {
                 throw new RuntimeException(e);
             }
         });
-        signupSalesman.setOnMouseClicked(MouseEvent->
-        {
+        facebook_icon.setOnMouseClicked(MouseEvent -> {
             try {
-                signupSalesman();
-            } catch (Exception e) {
+                show_facebook();
+            } catch (URISyntaxException | IOException e) {
                 throw new RuntimeException(e);
             }
         });
 
+
+        salesmanSignup.setOnMouseClicked(MouseEvent->
+        {
+            try {
+                salesmanSignupPage();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
 
         set_transition(image1);
         set_transition(image2);
@@ -115,62 +132,6 @@ public class loginRolePage implements Initializable {
         scale3.play();
     }
 
-    private void signupSalesman() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/salesmanSignup.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("MHIPharmacy");
-        stage.setScene(scene);
-        Stage currentStage = (Stage) signupSalesman.getScene().getWindow();
-        currentStage.close();
-        stage.show();
-    }
-
-    private void loginSalesman() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/salesmanLogin.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("MHIPharmacy");
-        stage.setScene(scene);
-        Stage currentStage = (Stage) loginSalesman.getScene().getWindow();
-        currentStage.close();
-        stage.show();
-    }
-
-    private void signupManager() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/managerSignup.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("MHIPharmacy");
-        stage.setScene(scene);
-        Stage currentStage = (Stage) signupManager.getScene().getWindow();
-        currentStage.close();
-        stage.show();
-    }
-
-    private void loginManager() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/managerLogin.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("MHIPharmacy");
-        stage.setScene(scene);
-        Stage currentStage = (Stage) loginManager.getScene().getWindow();
-        currentStage.close();
-        stage.show();
-    }
-
-    private void signupAdmin() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/adminSignup.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("MHIPharmacy");
-        stage.setScene(scene);
-
-        Stage currentStage = (Stage) signupAdmin.getScene().getWindow();
-        currentStage.close();
-        stage.show();
-    }
-
     private void loginAdmin() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/adminLogin.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -182,6 +143,69 @@ public class loginRolePage implements Initializable {
         currentStage.close();
         stage.show();
     }
+    private void show_facebook() throws URISyntaxException, IOException
+    {
+        Desktop.getDesktop().browse(new URI("https://www.facebook.com"));
+    }
+    private void adminSignupPage() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/adminSignup.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        Stage currentStage = (Stage) adminSignup.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+
+    private void loginManager() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/managerLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        Stage currentStage = (Stage) loginManager.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+
+    private void managerSignupPage() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/managerSignup.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        Stage currentStage = (Stage) managerSignup.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+    private void loginSalesman() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/salesmanLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        Stage currentStage = (Stage) loginSalesman.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+
+    private void salesmanSignupPage() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/salesmanSignup.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        Stage currentStage = (Stage) salesmanSignup.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+
     private void changes() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/aboutPage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());

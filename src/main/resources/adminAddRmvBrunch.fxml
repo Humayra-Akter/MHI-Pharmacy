@@ -6,10 +6,13 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="516.0" prefWidth="700.0" style="-fx-background-color: #02462f;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.adminAddRmvBrunch">
+<AnchorPane prefHeight="516.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.adminAddRmvBrunch">
    <children>
       <TableView layoutY="253.0" prefHeight="268.0" prefWidth="700.0">
         <columns>
@@ -43,10 +46,36 @@
          </font>
       </Label>
       <DatePicker layoutX="485.0" layoutY="202.0" prefHeight="28.0" prefWidth="174.0" style="-fx-background-color: #b6fcca; -fx-border-color: #b6fcca; -fx-border-width: 0 0 2 0;" />
-      <Text fill="#b6fcca" layoutX="41.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Or Remove Branch" wrappingWidth="396.5366897583008">
+      <Text layoutX="41.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Or Remove Branch" wrappingWidth="396.5366897583008">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="27.0" />
          </font>
+         <fill>
+            <LinearGradient startY="0.5984848633860096">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3688109219074249" green="0.9052631855010986" blue="0.5208057165145874" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.004878048780487798">
+                     <color>
+                        <Color red="0.3688109219074249" green="0.9052631855010986" blue="0.5208057165145874" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6433378196500673">
+                     <color>
+                        <Color red="0.7137255072593689" green="0.9882352948188782" blue="0.7921568751335144" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
       </Text>
    </children>
 </AnchorPane>

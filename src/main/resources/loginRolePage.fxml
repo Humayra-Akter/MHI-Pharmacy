@@ -79,7 +79,7 @@
                         </Lighting>
                      </effect>
                   </ImageView>
-                  <Button fx:id="signupAdmin" layoutX="37.0" layoutY="216.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                  <Button fx:id="adminSignup" layoutX="37.0" layoutY="216.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
@@ -118,7 +118,7 @@
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="signupSalesman" layoutX="37.0" layoutY="215.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                  <Button fx:id="salesmanSignup" layoutX="37.0" layoutY="215.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
@@ -152,7 +152,7 @@
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="signupManager" layoutX="36.0" layoutY="218.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                  <Button fx:id="managerSignup" layoutX="36.0" layoutY="218.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
@@ -311,7 +311,7 @@
                   <Font name="Berlin Sans FB Demi Bold" size="10.0" />
                </font>
             </Label>
-            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="618.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="facebook_icon" fitHeight="30.0" fitWidth="30.0" layoutX="618.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/facebook.png" />
                </image>

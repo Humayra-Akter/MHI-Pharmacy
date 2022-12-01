@@ -3,10 +3,12 @@ package com.example.pharma.controllers;
 import com.example.pharma.HelloApplication;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 import java.awt.*;
 import java.io.File;
@@ -20,6 +22,7 @@ public class adminDashboard implements Initializable {
     public BorderPane border_pane;
     public Button addRmvBranch;
     public ImageView facebook_icon;
+    public Button back;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -45,6 +48,16 @@ public class adminDashboard implements Initializable {
                 throw new RuntimeException(e);
             }
         });
+
+        back.setOnMouseClicked(MouseEvent->
+        {
+            try
+            {
+                startPage();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     private void show_facebook() throws URISyntaxException, IOException
@@ -55,5 +68,15 @@ public class adminDashboard implements Initializable {
     private void set_center(FXMLLoader fxmlLoader) throws IOException{
                 AnchorPane anchorPane = fxmlLoader.load();
                 border_pane.setCenter(anchorPane);
+    }
+    public void startPage() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/startPage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        Stage currentStage = (Stage) back.getScene().getWindow();
+        currentStage.close();
+        stage.show();
     }
 }

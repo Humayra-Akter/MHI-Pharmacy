@@ -236,7 +236,7 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Button layoutX="820.0" layoutY="23.0" mnemonicParsing="false" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
+      <Button fx:id="back" layoutX="820.0" layoutY="23.0" mnemonicParsing="false" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="&lt;&lt;&lt;" textFill="#b6fcca">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="11.0" />
          </font>
