@@ -23,8 +23,9 @@ public class adminLogin implements Initializable {
     public Button backtorolpage;
     @FXML
     private Button login;
-    public Button adminSignup;
 
+    @FXML
+    private Button signup;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ScaleTransition scale = new ScaleTransition();
@@ -44,51 +45,26 @@ public class adminLogin implements Initializable {
                 throw new RuntimeException(e);
             }
         });
-
-        adminSignup.setOnMouseClicked(MouseEvent->
-        {
-            try
-            {
-                adminSignup();
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        });
         login.setOnMouseClicked(MouseEvent->
         {
             try
             {
-                adminLoginBtn();
+                mngerLogin();
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
         });
-    }
+        signup.setOnMouseClicked(MouseEvent->
+        {
+            try
+            {
+                mngrSignup();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
 
-    private void adminSignup() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/adminSignup.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("MHIPharma");
-        stage.setScene(scene);
-        stage.setResizable(false);
-        Stage currentStage = (Stage) adminSignup.getScene().getWindow();
-        currentStage.close();
-        stage.show();
     }
-    private void adminLoginBtn() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/adminDashboard.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("MHIPharma");
-        stage.setScene(scene);
-        stage.setResizable(false);
-        Stage currentStage = (Stage) adminSignup.getScene().getWindow();
-        currentStage.close();
-        stage.show();
-    }
-
-
     private void backtorolpage() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/loginRolePage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -97,6 +73,28 @@ public class adminLogin implements Initializable {
         stage.setScene(scene);
         stage.setResizable(false);
         Stage currentStage = (Stage) backtorolpage.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+    private void mngerLogin() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/adminDashboard.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharma");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        Stage currentStage = (Stage) login.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+    private void mngrSignup() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/adminSignup.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharma");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        Stage currentStage = (Stage) signup.getScene().getWindow();
         currentStage.close();
         stage.show();
     }

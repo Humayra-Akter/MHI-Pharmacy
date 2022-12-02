@@ -18,8 +18,10 @@ import java.util.ResourceBundle;
 public class salesmanLogin implements Initializable {
     public ImageView designImage;
     public Button back;
-    @FXML
-    private Button login;
+
+    public Button loginToDashboard;
+
+    public Button signupToPage;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -32,11 +34,20 @@ public class salesmanLogin implements Initializable {
                 throw new RuntimeException(e);
             }
         });
-        login.setOnMouseClicked(MouseEvent->
+        loginToDashboard.setOnMouseClicked(MouseEvent->
         {
             try
             {
-                dashboardPg();
+                salesmanloginToDashboard();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        signupToPage.setOnMouseClicked(MouseEvent->
+        {
+            try
+            {
+                salesmanSignupPage();
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -61,13 +72,23 @@ public class salesmanLogin implements Initializable {
         currentStage.close();
         stage.show();
     }
-    public void dashboardPg() throws IOException {
+    public void salesmanloginToDashboard() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/salesmanDashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("MHIPharmacy");
         stage.setScene(scene);
-        Stage currentStage = (Stage) login.getScene().getWindow();
+        Stage currentStage = (Stage) loginToDashboard.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+    public void salesmanSignupPage() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/salesmanSignup.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        Stage currentStage = (Stage) loginToDashboard.getScene().getWindow();
         currentStage.close();
         stage.show();
     }

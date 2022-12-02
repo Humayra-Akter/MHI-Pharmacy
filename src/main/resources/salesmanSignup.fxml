@@ -29,7 +29,7 @@
          <children>
             <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="408.0" prefWidth="314.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);">
                <children>
-                  <Button layoutX="24.0" layoutY="343.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="266.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textAlignment="CENTER" textFill="#b6fcca">
+                  <Button fx:id="salesmanSignupToDashboard" layoutX="24.0" layoutY="343.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="266.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textAlignment="CENTER" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="15.0" />
                      </font>

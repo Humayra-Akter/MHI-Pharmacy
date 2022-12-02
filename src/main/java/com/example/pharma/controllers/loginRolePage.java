@@ -32,9 +32,9 @@ public class loginRolePage implements Initializable {
     public Button loginAdmin;
     public Button loginManager;
     public Button loginSalesman;
-    public Button adminSignup;
-    public Button salesmanSignup;
-    public Button managerSignup;
+    public Button signupAdmin;
+    public Button signupSalesman;
+    public Button signupManager;
     public ImageView facebook_icon;
 
     @Override
@@ -65,7 +65,7 @@ public class loginRolePage implements Initializable {
                 }
         });
 
-        adminSignup.setOnMouseClicked(MouseEvent-> {
+        signupAdmin.setOnMouseClicked(MouseEvent-> {
             try {
                 adminSignupPage();
             } catch (IOException e) {
@@ -82,7 +82,7 @@ public class loginRolePage implements Initializable {
                 }
         });
 
-        managerSignup.setOnMouseClicked(MouseEvent->
+        signupManager.setOnMouseClicked(MouseEvent->
         {
             try {
                 managerSignupPage();
@@ -108,7 +108,7 @@ public class loginRolePage implements Initializable {
         });
 
 
-        salesmanSignup.setOnMouseClicked(MouseEvent->
+        signupSalesman.setOnMouseClicked(MouseEvent->
         {
             try {
                 salesmanSignupPage();
@@ -138,7 +138,7 @@ public class loginRolePage implements Initializable {
         Stage stage = new Stage();
         stage.setTitle("MHIPharmacy");
         stage.setScene(scene);
-
+        stage.setResizable(false);
         Stage currentStage = (Stage) loginAdmin.getScene().getWindow();
         currentStage.close();
         stage.show();
@@ -154,7 +154,7 @@ public class loginRolePage implements Initializable {
         stage.setTitle("MHIPharmacy");
         stage.setScene(scene);
         stage.setResizable(false);
-        Stage currentStage = (Stage) adminSignup.getScene().getWindow();
+        Stage currentStage = (Stage) signupAdmin.getScene().getWindow();
         currentStage.close();
         stage.show();
     }
@@ -178,7 +178,7 @@ public class loginRolePage implements Initializable {
         stage.setTitle("MHIPharmacy");
         stage.setScene(scene);
         stage.setResizable(false);
-        Stage currentStage = (Stage) managerSignup.getScene().getWindow();
+        Stage currentStage = (Stage) signupManager.getScene().getWindow();
         currentStage.close();
         stage.show();
     }
@@ -201,18 +201,18 @@ public class loginRolePage implements Initializable {
         stage.setTitle("MHIPharmacy");
         stage.setScene(scene);
         stage.setResizable(false);
-        Stage currentStage = (Stage) salesmanSignup.getScene().getWindow();
+        Stage currentStage = (Stage) signupSalesman.getScene().getWindow();
         currentStage.close();
         stage.show();
     }
 
     private void changes() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/aboutPage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/salesmanDashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("MHIPharmacy");
         stage.setScene(scene);
-
+        stage.setResizable(false);
         Stage currentStage = (Stage) apatotoCheck2.getScene().getWindow();
         currentStage.close();
         stage.show();

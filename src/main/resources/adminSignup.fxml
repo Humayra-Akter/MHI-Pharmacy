@@ -27,7 +27,7 @@
       </ImageView>
       <AnchorPane layoutX="503.0" layoutY="108.0" prefHeight="420.0" prefWidth="328.0" style="-fx-background-color: green;">
          <children>
-            <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="408.0" prefWidth="314.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);">
+            <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="408.0" prefWidth="314.0" styleClass="anchorPaneee" stylesheets="@CSS/adminLogin.css">
                <children>
                   <ImageView fitHeight="74.0" fitWidth="63.0" layoutX="39.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -62,7 +62,7 @@
                   <RadioButton layoutX="223.0" layoutY="259.0" mnemonicParsing="false" text="Others" />
                   <RadioButton layoutX="125.0" layoutY="254.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="63.0" text="Female" />
                   <DatePicker layoutX="23.0" layoutY="294.0" prefHeight="26.0" prefWidth="254.0" promptText="date of birth" />
-                  <Button fx:id="signup" layoutX="23.0" layoutY="357.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="254.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                  <Button fx:id="toDBAdminSignupBtn" layoutX="23.0" layoutY="357.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="254.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="15.0" />
                      </font>

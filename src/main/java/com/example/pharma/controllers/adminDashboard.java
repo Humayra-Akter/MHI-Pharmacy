@@ -26,11 +26,11 @@ public class adminDashboard implements Initializable {
     public Button addRmvDrug;
 
     @FXML
-    private Button drugHistory;
+    public Button drugHistory;
 
 
     @FXML
-    private Button logout;
+    public Button logout;
 
     public adminDashboard(Button drugHistory) {
         this.drugHistory = drugHistory;

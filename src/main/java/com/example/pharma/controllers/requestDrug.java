@@ -24,14 +24,14 @@ public class requestDrug implements Initializable {
         series01.getData().add(new XYChart.Data("Feb", 200));
         series01.getData().add(new XYChart.Data("Mar", 300));
         series01.getData().add(new XYChart.Data("Apr", 800));
-        series01.getData().add(new XYChart.Data("May", 600));
-        series01.getData().add(new XYChart.Data("Jun", 600));
-        series01.getData().add(new XYChart.Data("Jul", 600));
-        series01.getData().add(new XYChart.Data("Aug", 600));
-        series01.getData().add(new XYChart.Data("Sep", 600));
+        series01.getData().add(new XYChart.Data("May", 300));
+        series01.getData().add(new XYChart.Data("Jun", 20));
+        series01.getData().add(new XYChart.Data("Jul", 100));
+        series01.getData().add(new XYChart.Data("Aug", 400));
+        series01.getData().add(new XYChart.Data("Sep", 800));
         series01.getData().add(new XYChart.Data("Oct", 600));
-        series01.getData().add(new XYChart.Data("Nov", 600));
-        series01.getData().add(new XYChart.Data("Dec", 600));
+        series01.getData().add(new XYChart.Data("Nov", 850));
+        series01.getData().add(new XYChart.Data("Dec", 686));
         chart.getData().add(series01);
     }
 }

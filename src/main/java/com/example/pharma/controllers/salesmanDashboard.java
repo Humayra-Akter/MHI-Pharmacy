@@ -16,8 +16,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class salesmanDashboard implements Initializable {
-    private Button back;
-    private ImageView facebook_icon;
+    public Button back;
+    public ImageView facebook_icon;
+
 
 
     @Override

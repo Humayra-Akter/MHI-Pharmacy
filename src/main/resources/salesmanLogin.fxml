@@ -49,12 +49,12 @@
                         </Lighting>
                      </effect>
                   </ImageView>
-                  <Button fx:id="login" layoutX="50.0" layoutY="277.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="214.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
+                  <Button fx:id="loginToDashboard" layoutX="50.0" layoutY="277.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="214.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="50.0" layoutY="321.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="214.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
+                  <Button fx:id="signupToPage" layoutX="50.0" layoutY="321.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="214.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="SIGNUP" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
