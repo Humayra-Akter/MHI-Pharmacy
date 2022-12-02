@@ -49,7 +49,7 @@
                         </Lighting>
                      </effect>
                   </ImageView>
-                  <Button layoutX="50.0" layoutY="277.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="214.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
+                  <Button fx:id="login" layoutX="50.0" layoutY="277.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="214.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="LOGIN" textFill="#b6fcca">
                      <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>

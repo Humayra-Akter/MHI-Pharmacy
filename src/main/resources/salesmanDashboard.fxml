@@ -18,7 +18,9 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.salesmanDashboard">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);"
+            xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.pharma.controllers.salesmanDashboard">
    <children>
       <AnchorPane layoutY="80.0" prefHeight="520.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);">
          <children>

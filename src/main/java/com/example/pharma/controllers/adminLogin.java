@@ -58,7 +58,7 @@ public class adminLogin implements Initializable {
         {
             try
             {
-                adminLoginPage();
+                adminLoginBtn();
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -76,7 +76,7 @@ public class adminLogin implements Initializable {
         currentStage.close();
         stage.show();
     }
-    private void adminLoginPage() throws IOException {
+    private void adminLoginBtn() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/adminDashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();

@@ -2,6 +2,7 @@ package com.example.pharma.controllers;
 
 import javafx.animation.ScaleTransition;
 import javafx.animation.TranslateTransition;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
@@ -17,6 +18,8 @@ import java.util.ResourceBundle;
 public class salesmanLogin implements Initializable {
     public ImageView designImage;
     public Button back;
+    @FXML
+    private Button login;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -25,6 +28,15 @@ public class salesmanLogin implements Initializable {
             try
             {
                 startPage();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        login.setOnMouseClicked(MouseEvent->
+        {
+            try
+            {
+                dashboardPg();
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -46,6 +58,16 @@ public class salesmanLogin implements Initializable {
         stage.setTitle("MHIPharmacy");
         stage.setScene(scene);
         Stage currentStage = (Stage) back.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+    public void dashboardPg() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(startPage.class.getResource("/salesmanDashboard.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharmacy");
+        stage.setScene(scene);
+        Stage currentStage = (Stage) login.getScene().getWindow();
         currentStage.close();
         stage.show();
     }
