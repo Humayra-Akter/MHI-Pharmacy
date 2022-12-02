@@ -2,6 +2,7 @@ package com.example.pharma.controllers;
 
 import com.example.pharma.HelloApplication;
 import javafx.animation.*;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
@@ -20,7 +21,8 @@ public class adminLogin implements Initializable {
     public AnchorPane adminLoginPg;
     public ImageView designImage;
     public Button backtorolpage;
-    public Button adminLogintoDashboard;
+    @FXML
+    private Button login;
     public Button adminSignup;
 
     @Override
@@ -42,20 +44,21 @@ public class adminLogin implements Initializable {
                 throw new RuntimeException(e);
             }
         });
-        adminLogintoDashboard.setOnMouseClicked(MouseEvent->
-        {
-            try
-            {
-                adminLogintoDashboard();
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        });
+
         adminSignup.setOnMouseClicked(MouseEvent->
         {
             try
             {
                 adminSignup();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        login.setOnMouseClicked(MouseEvent->
+        {
+            try
+            {
+                adminLoginPage();
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -73,18 +76,18 @@ public class adminLogin implements Initializable {
         currentStage.close();
         stage.show();
     }
-
-    private void adminLogintoDashboard() throws IOException {
+    private void adminLoginPage() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/adminDashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("MHIPharma");
         stage.setScene(scene);
         stage.setResizable(false);
-        Stage currentStage = (Stage) adminLogintoDashboard.getScene().getWindow();
+        Stage currentStage = (Stage) adminSignup.getScene().getWindow();
         currentStage.close();
         stage.show();
     }
+
 
     private void backtorolpage() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/loginRolePage.fxml"));

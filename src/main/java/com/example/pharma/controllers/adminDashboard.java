@@ -1,6 +1,7 @@
 package com.example.pharma.controllers;
 
 import com.example.pharma.HelloApplication;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
@@ -11,7 +12,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.awt.*;
-import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -23,6 +23,19 @@ public class adminDashboard implements Initializable {
     public Button addRmvBranch;
     public ImageView facebook_icon;
     public Button back;
+    public Button addRmvDrug;
+
+    @FXML
+    private Button drugHistory;
+
+
+    @FXML
+    private Button logout;
+
+    public adminDashboard(Button drugHistory) {
+        this.drugHistory = drugHistory;
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -40,6 +53,7 @@ public class adminDashboard implements Initializable {
                 e.printStackTrace();
             }
         });
+
 
         facebook_icon.setOnMouseClicked(MouseEvent -> {
             try {

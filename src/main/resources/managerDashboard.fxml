@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="border_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" BorderPane.alignment="CENTER">
          <children>
@@ -62,27 +62,27 @@
                   </RadialGradient>
                </fill>
             </Text>
-            <Button layoutX="18.0" layoutY="272.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Check Drug" textFill="#b6fcca">
+            <Button fx:id="checkDrug" layoutX="18.0" layoutY="272.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Check Drug" textFill="#b6fcca">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="19.0" layoutY="174.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Add Salesman" textFill="#b6fcca">
+            <Button fx:id="addSalesman" layoutX="19.0" layoutY="174.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Add Salesman" textFill="#b6fcca">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="19.0" layoutY="221.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Expire Check" textFill="#b6fcca">
+            <Button fx:id="expireCheck" layoutX="19.0" layoutY="221.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Expire Check" textFill="#b6fcca">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="19.0" layoutY="373.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Logout" textAlignment="RIGHT" textFill="#b6fcca">
+            <Button fx:id="logout" layoutX="19.0" layoutY="373.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Logout" textAlignment="RIGHT" textFill="#b6fcca">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="19.0" layoutY="323.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Request Drug" textFill="#b6fcca">
+            <Button fx:id="requestDrug" layoutX="19.0" layoutY="323.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" styleClass="roleBtn" stylesheets="@CSS/rolePage.css" text="Request Drug" textFill="#b6fcca">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="15.0" />
                </font>

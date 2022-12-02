@@ -3,6 +3,7 @@ package com.example.pharma.controllers;
 import com.example.pharma.HelloApplication;
 import javafx.animation.ScaleTransition;
 import javafx.animation.TranslateTransition;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
@@ -18,6 +19,11 @@ import java.util.ResourceBundle;
 public class managerLogin implements Initializable {
     public ImageView designImage;
     public Button back;
+    @FXML
+    private Button login;
+
+    @FXML
+    private Button signup;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -26,6 +32,24 @@ public class managerLogin implements Initializable {
             try
             {
                 back();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        login.setOnMouseClicked(MouseEvent->
+        {
+            try
+            {
+                mngerLogin();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        signup.setOnMouseClicked(MouseEvent->
+        {
+            try
+            {
+                mngrSignup();
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -49,6 +73,28 @@ public class managerLogin implements Initializable {
         stage.setScene(scene);
         stage.setResizable(false);
         Stage currentStage = (Stage) back.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+    private void mngerLogin() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/managerDashboard.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharma");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        Stage currentStage = (Stage) login.getScene().getWindow();
+        currentStage.close();
+        stage.show();
+    }
+    private void mngrSignup() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/managerDashboard.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("MHIPharma");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        Stage currentStage = (Stage) signup.getScene().getWindow();
         currentStage.close();
         stage.show();
     }
