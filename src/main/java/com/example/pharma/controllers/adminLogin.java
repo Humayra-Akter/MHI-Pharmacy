@@ -7,12 +7,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,7 +25,11 @@ public class adminLogin implements Initializable {
     public Button backtorolpage;
     @FXML
     private Button login;
+    @FXML
+    private TextField adminNameField;
 
+    @FXML
+    private TextField adminPassField;
     @FXML
     private Button signup;
     @Override
@@ -49,6 +55,10 @@ public class adminLogin implements Initializable {
         {
             try
             {
+                File file= new File("E:\\java\\pharma\\src\\main\\resources\\textFiles\\adminsLogin.txt");
+                String user= adminNameField.getText();
+                String pass= adminPassField.getText();
+
                 mngerLogin();
             } catch (Exception e) {
                 throw new RuntimeException(e);

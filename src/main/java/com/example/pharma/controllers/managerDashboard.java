@@ -1,21 +1,28 @@
 package com.example.pharma.controllers;
 
 import com.example.pharma.HelloApplication;
+import javafx.animation.ScaleTransition;
+import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class managerDashboard implements Initializable {
-    
+
+    @FXML
+    private ImageView about;
+
     @FXML
     private Button addSalesman;
 
@@ -23,18 +30,34 @@ public class managerDashboard implements Initializable {
     private Button back;
 
     @FXML
-    private Button checkDrug;
-    @FXML
     private BorderPane border_pane;
+
+    @FXML
+    private Button checkDrug;
 
     @FXML
     private Button expireCheck;
 
     @FXML
+    private ImageView facebook_icon;
+
+    @FXML
     private Button logout;
 
     @FXML
+    private ImageView managerImg1;
+
+    @FXML
+    private ImageView managerImg2;
+
+    @FXML
+    private ImageView msngr_icon;
+
+    @FXML
     private Button requestDrug;
+
+    @FXML
+    private ImageView uTube_icon;
 
 
     @Override
@@ -90,6 +113,23 @@ public class managerDashboard implements Initializable {
                 e.printStackTrace();
             }
         });
+        set_transition(facebook_icon);
+        set_transition(msngr_icon);
+        set_transition(about);
+        set_transition(uTube_icon);
+        set_transition(managerImg1);
+        set_transition(managerImg2);
+
+    }
+
+    private void set_transition(ImageView image)
+    {
+        ScaleTransition scale3 = new ScaleTransition(Duration.millis(2000), image);
+        scale3.setCycleCount(TranslateTransition.INDEFINITE);
+        scale3.setByX(0.3);
+        scale3.setByY(0.3);
+        scale3.setAutoReverse(true);
+        scale3.play();
     }
 
     private void set_center(FXMLLoader fxmlLoader) throws IOException{

@@ -16,12 +16,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="516.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.checkDrug">
    <children>
       <TableView layoutX="371.0" layoutY="103.0" prefHeight="402.0" prefWidth="315.0" styleClass="tableView" stylesheets="@CSS/rolePage.css">
         <columns>
-          <TableColumn prefWidth="132.0" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-radius: 4 4 4 4; -fx-border-width: 2 2 2 2;" text="Drug Name" />
+          <TableColumn prefWidth="132.0" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-radius: 4 4 4 4; -fx-border-width: 2 2 2 2; -fx-text-fill: #02462f;" text="Drug Name" />
           <TableColumn prefWidth="80.80001831054688" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-radius: 4 4 4 4; -fx-border-width: 2 2 2 2;" text="Quantity" />
             <TableColumn prefWidth="98.39990234375" style="-fx-background-color: #b6fcca; -fx-border-color: #02462f; -fx-border-radius: 4 4 4 4; -fx-border-width: 2 2 2 2;" text="Expiry Date" />
         </columns>

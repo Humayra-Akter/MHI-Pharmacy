@@ -17,9 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="border_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.pharma.controllers.adminDashboard">
+<BorderPane fx:id="border_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.adminDashboard">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" BorderPane.alignment="CENTER">
          <Text layoutX="20.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN DASHBOARD" textAlignment="CENTER" wrappingWidth="159.73675537109375">
@@ -105,7 +103,7 @@
             </effect>
             <Image url="@images/facebook.png" />
          </ImageView>
-         <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="69.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fx:id="msngr_icom" fitHeight="31.0" fitWidth="32.0" layoutX="69.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
             <image>
                <Image url="@images/facebook-messenger.png" />
             </image>
@@ -124,10 +122,7 @@
                </Lighting>
             </effect>
          </ImageView>
-         <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="160.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-               <Image url="@images/info.png" />
-            </image>
+         <ImageView fx:id="about" fitHeight="31.0" fitWidth="32.0" layoutX="160.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
             <effect>
                <Lighting diffuseConstant="0.71" specularConstant="0.6" specularExponent="2.38" surfaceScale="3.05">
                   <bumpInput>
@@ -142,8 +137,9 @@
                   </light>
                </Lighting>
             </effect>
+            <Image url="@images/info.png" />
          </ImageView>
-         <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="114.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fx:id="uTube_icon" fitHeight="31.0" fitWidth="32.0" layoutX="114.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
             <image>
                <Image url="@images/youtube.png" />
             </image>
@@ -303,7 +299,7 @@
                   </Lighting>
                </effect>
             </ImageView>
-            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="756.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="adminImg1" fitHeight="59.0" fitWidth="59.0" layoutX="756.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/icon-admin.png" />
                </image>
@@ -423,7 +419,7 @@
                         </LinearGradient>
                      </fill>
                   </Rectangle>
-                  <ImageView fitHeight="90.0" fitWidth="98.0" layoutX="133.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="adminImg2" fitHeight="90.0" fitWidth="98.0" layoutX="133.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/icon-admin.png" />
                      </image>

@@ -10,6 +10,8 @@
 .anchorPaneee{
 -fx-background-color : linear-gradient(to top, #b6fcca,#f7faf9);
 -fx-background-radius : 10 10 10 10;
+-fx-border-color : #02463f;
+-fx-border-radius : 10 10 10 10;
 }
 
 .anchorPaneee:hover{

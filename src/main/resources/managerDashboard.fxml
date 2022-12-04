@@ -17,10 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="border_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
-            prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);"
-            xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.pharma.controllers.managerDashboard">
+<BorderPane fx:id="border_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to top, #02462f,#01875b);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.controllers.managerDashboard">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to top, #b6fcca,#f7faf9);" BorderPane.alignment="CENTER">
          <children>
@@ -95,7 +92,7 @@
                   <Font name="Berlin Sans FB Demi Bold" size="15.0" />
                </font>
             </Button>
-            <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="23.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="facebook_icon" fitHeight="31.0" fitWidth="28.0" layoutX="23.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/facebook.png" />
                </image>
@@ -114,7 +111,7 @@
                   </Lighting>
                </effect>
             </ImageView>
-            <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="68.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="msngr_icon" fitHeight="31.0" fitWidth="28.0" layoutX="68.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/facebook-messenger.png" />
                </image>
@@ -133,7 +130,7 @@
                   </Lighting>
                </effect>
             </ImageView>
-            <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="113.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="uTube_icon" fitHeight="31.0" fitWidth="28.0" layoutX="113.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/youtube.png" />
                </image>
@@ -152,7 +149,7 @@
                   </Lighting>
                </effect>
             </ImageView>
-            <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="160.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="about" fitHeight="31.0" fitWidth="28.0" layoutX="160.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/info.png" />
                </image>
@@ -332,7 +329,7 @@
                   </Lighting>
                </effect>
             </ImageView>
-            <ImageView fitHeight="59.0" fitWidth="60.0" layoutX="765.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="managerImg1" fitHeight="59.0" fitWidth="60.0" layoutX="765.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/manager.jpg" />
                </image>
@@ -415,7 +412,7 @@
                   <Label alignment="CENTER" layoutX="86.0" layoutY="219.0" prefHeight="33.0" prefWidth="188.0" style="-fx-border-color: green; -fx-border-width: 0 0 2 0; -fx-border-radius: 10 10 10 10;" text="age" />
                   <Label alignment="CENTER" layoutX="86.0" layoutY="265.0" prefHeight="33.0" prefWidth="188.0" style="-fx-border-color: green; -fx-border-width: 0 0 2 0; -fx-border-radius: 10 10 10 10;" text="brunch" />
                   <Label alignment="CENTER" layoutX="86.0" layoutY="312.0" prefHeight="33.0" prefWidth="188.0" style="-fx-border-color: green; -fx-border-width: 0 0 2 0; -fx-border-radius: 10 10 10 10;" text="ID" />
-                  <ImageView fitHeight="94.0" fitWidth="83.0" layoutX="142.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="managerImg2" fitHeight="94.0" fitWidth="83.0" layoutX="142.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/manager.jpg" />
                      </image>
